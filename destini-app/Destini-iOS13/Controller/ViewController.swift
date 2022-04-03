@@ -35,7 +35,23 @@ class ViewController: UIViewController {
     }
     
     @IBAction func choiceMade(_ sender: UIButton) {
+        // store user story path
+        let userPath = sender.currentTitle
         
+        // check user path
+        if userPath == storyLogic.storyArr[0].path0 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[1].story
+            choice1Button.setTitle(storyLogic.storyArr[1].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[1].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[0].path1 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[2].story
+            choice1Button.setTitle(storyLogic.storyArr[2].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[2].path1, for: .normal)
+        }
     }
     
 }
