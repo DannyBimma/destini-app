@@ -12,8 +12,10 @@ import Foundation
 struct StoryBrain {
     let storyArr = [
         Story(story: "You have two pills presented before you.", path0: "Take the red pill", path1: "Take the blue pill"),
-        Story(story: "Aliens invite you onboard their ship", path0: "Board the ship", path1: "Run away"),
-        Story(story: "You find $1,000,000 USD in a briefcase", path0: "Tell the police", path1: "Keep the money")
+        Story(story: "Aliens invite you onboard their ship.", path0: "Board the ship", path1: "Run away"),
+        Story(story: "They invite you to leave Earth with them.", path0: "Leave Earth", path1: "Refuse to go"),
+        Story(story: "You suddenly wake up from a strange dream.", path0: "Go back to sleep", path1: "Start your day"),
+        Story(story: "You slowly wake up from a strange dream", path0: "Go back to sleep", path1: "Start yourday")
     ]
 }
 
