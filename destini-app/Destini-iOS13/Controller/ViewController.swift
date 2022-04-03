@@ -15,11 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
-    // store initial story and choices
-//    let story0: String = "You have two pills presented before you."
-//    let choice0: String = "Take the red pill"
-//    let choice1: String = "Take the red pill"
-    
     // link story logic
     var storyLogic = StoryBrain()
     
@@ -48,9 +43,65 @@ class ViewController: UIViewController {
         
         if userPath == storyLogic.storyArr[0].path1 {
             // display next path
+            storyLabel.text = storyLogic.storyArr[4].story
+            choice1Button.setTitle(storyLogic.storyArr[4].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[4].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[1].path0 {
+            // display next path
             storyLabel.text = storyLogic.storyArr[2].story
             choice1Button.setTitle(storyLogic.storyArr[2].path0, for: .normal)
             choice2Button.setTitle(storyLogic.storyArr[2].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[1].path1 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[3].story
+            choice1Button.setTitle(storyLogic.storyArr[3].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[3].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[2].path0 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[4].story
+            choice1Button.setTitle(storyLogic.storyArr[4].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[4].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[2].path1 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[3].story
+            choice1Button.setTitle(storyLogic.storyArr[3].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[3].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[3].path0 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[4].story
+            choice1Button.setTitle(storyLogic.storyArr[4].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[4].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[3].path1 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[1].story
+            choice1Button.setTitle(storyLogic.storyArr[1].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[1].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[4].path0 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[0].story
+            choice1Button.setTitle(storyLogic.storyArr[0].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[0].path1, for: .normal)
+        }
+        
+        if userPath == storyLogic.storyArr[4].path1 {
+            // display next path
+            storyLabel.text = storyLogic.storyArr[0].story
+            choice1Button.setTitle(storyLogic.storyArr[0].path0, for: .normal)
+            choice2Button.setTitle(storyLogic.storyArr[0].path1, for: .normal)
         }
     }
     
