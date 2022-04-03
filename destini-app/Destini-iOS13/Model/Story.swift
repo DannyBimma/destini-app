@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+// Create the story structure
+struct Story {
+    let story: String
+    let path0: String
+    let path1: String
+}
